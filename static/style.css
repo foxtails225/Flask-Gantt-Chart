@@ -1,0 +1,39 @@
+body {
+    background-color: #F0F4F8;
+}
+
+/* dropdown */
+.dropdown-item {
+    cursor: pointer;
+}
+
+/* data table */
+.table {
+    counter-reset: rowNumber;
+    border: 1px solid #dee2e6 !important;
+}
+
+.table tbody tr::before {
+    display: table-cell;
+    counter-increment: rowNumber;
+    content: counter(rowNumber);
+    padding-right: 0.3em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-responsive {
+    max-height: 25vh !important;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.table thead th {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+    box-shadow: 0 0 0 1px #dee2e6;
+}

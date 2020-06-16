@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="card bg-info my-4">
+            <div class="card card-header card-primary text-bold h5">
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle float-right" type="button" id="dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown">
+                    </div>
+                </div>
+            </div>
+            <div class="card card-body">
+                <div id="grantt" class="mt-2"></div>
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered table-striped text-center">
+                        <thead style="font-size: smaller">
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">NAME</th>
+                            <th scope="col">BAND</th>
+                            <th scope="col">LINK TYPE</th>
+                            <th scope="col" style="width: 12%">MIN FREQ (GHZ)</th>
+                            <th scope="col" style="width: 12%">MAX FREQ (GHZ)</th>
+                            <th scope="col">START DATE</th>
+                            <th scope="col">END DATE</th>
+                        </tr>
+                        </thead>
+                        <tbody id="result" style="font-size: small">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
